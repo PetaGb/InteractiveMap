@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      Plotly.newPlot("map", {{ fig | tojson | safe }});
+    </script>
+  </body>
+</html>
+
+
